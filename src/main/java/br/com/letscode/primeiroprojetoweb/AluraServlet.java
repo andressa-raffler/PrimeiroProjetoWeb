@@ -8,14 +8,20 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/aula-alura")
-public class OlaMundoServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/aula-alura") //Mapeia para uma URL
+public class AluraServlet extends HttpServlet {
+
 
     @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-        PrintWriter out = response.getWriter();
+        PrintWriter out = resp.getWriter();
+        out.println("<html>");
+        out.println("<body>");
+        out.println("Servlet da Alura");
+        out.println("</body>");
+        out.println("</html>");
 
-
+        System.out.println("o servlet AULA-ALURA foi chamado");
     }
 }
