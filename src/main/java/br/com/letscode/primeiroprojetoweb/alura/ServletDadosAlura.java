@@ -1,4 +1,4 @@
-package br.com.letscode.primeiroprojetoweb;
+package br.com.letscode.primeiroprojetoweb.alura;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

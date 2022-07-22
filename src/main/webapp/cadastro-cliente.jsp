@@ -11,6 +11,8 @@
     <title>Cadastro de Cliente</title>
 </head>
 <body>
+    <h1>Cadastro de Cliente</h1>
+<fieldset>
 <form action = "cliente-servlet" method="post">
 <div>
     <label for="idNome">Nome:</label>
@@ -31,7 +33,8 @@
     <label for="idIdade">Idade:</label>
     <input type="text" id="idIdade" name="idade">
 </div>
-<input type="submit" value="Enviar">
+    <input type="submit" value="Enviar"><br/>
 </form>
+</fieldset>
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+<%--@elvariable id="nome" type=%>
 <%--
   Created by IntelliJ IDEA.
   User: andressaraffler
@@ -11,6 +13,8 @@
     <title>Cliente Cadastrado!</title>
 </head>
 <body>
-    <h1>Cliente cadastrado com sucesso!</h1>
+    <h1>Cliente de id: ${idClienteSalvo} cadastrado com sucesso!</h1><br/>
+    <a href="index.jsp">Home</a><br/>
+
 </body>
 </html>

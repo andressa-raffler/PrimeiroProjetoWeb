@@ -1,5 +1,9 @@
 package br.com.letscode.primeiroprojetoweb;
 
+import br.com.letscode.primeiroprojetoweb.bo.ClienteBusinessObject;
+import br.com.letscode.primeiroprojetoweb.dao.ClienteDao;
+import br.com.letscode.primeiroprojetoweb.model.Cliente;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.*;
@@ -8,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 @WebServlet(value = "/cliente-servlet")
 public class ClienteServlet extends HttpServlet {
@@ -23,20 +28,16 @@ public class ClienteServlet extends HttpServlet {
         response.setContentType("text/html");
 
         String nome = request.getParameter("nome");
-        String cpf = request.getParameter("CPF");
-        String email = request.getParameter("email");
-        String idade = request.getParameter("idade");
-
-
 
         PrintWriter writer = response.getWriter();
         writer.println("<html>");
         writer.println("<body>");
-        writer.println("<p> Teste GET servlet cliente: "+nome+", cpf: "+cpf+ "</p>");
+        writer.println("<p> Teste GET servlet cliente: "+nome);
         writer.println("</body>");
         writer.println("</html>");
 
     }
+
 
 
     @Override
@@ -51,8 +52,18 @@ public class ClienteServlet extends HttpServlet {
 
         System.out.println("Nome: "+nome+", cpf: "+cpf+", idade "+idade+", email "+email);
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("sucesso-cadastro.jsp");
-        requestDispatcher.forward(request,response);
+        request.setAttribute("meuNome",nome);
+
+
+        ClienteBusinessObject businessObject = new ClienteBusinessObject();
+        Cliente cliente = new Cliente(nome, cpf, email, Integer.parseInt(idade));
+        Cliente clienteSalvo = businessObject.save(cliente);
+
+        List<ClienteDao> clientes = businessObject.findAll();
+        request.setAttribute("idClienteSalvo", clienteSalvo.getId());
+        RequestDispatcher dispatcher = request.getRequestDispatcher("lista-clientes.jsp");
+        dispatcher.forward(request,response);
+
     }
 
     @Override

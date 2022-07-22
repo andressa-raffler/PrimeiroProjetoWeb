@@ -9,20 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fcbc467-9b70-464f-bf92-f05003f60933" name="Changes" comment="First Commit Primeiro Projeto Web">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/AulaHTML-arquivo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/cadastro-cliente.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/sucesso-cadastro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1fcbc467-9b70-464f-bf92-f05003f60933" name="Changes" comment="Introducao ao HTML e JSP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/bo/ClienteBusinessObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/dao/ClienteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lista-clientes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/AluraServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/AluraServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/AluraServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/alura/AluraServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/ClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/ClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/ServletDadosAlura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/ServletDadosAlura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/arquivo-html.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/arquivo-html.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/ServletDadosAlura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/letscode/primeiroprojetoweb/alura/ServletDadosAlura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/arquivo-html.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/alura/arquivo-html.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cadastro-cliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cadastro-cliente.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/alura/formulario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sucesso-cadastro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sucesso-cadastro.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -79,8 +80,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/alura" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.64">
@@ -269,8 +271,18 @@
       <workItem from="1658093918753" duration="2260000" />
       <workItem from="1658181785602" duration="8684000" />
       <workItem from="1658242095413" duration="4053000" />
-      <workItem from="1658345685796" duration="10222000" />
+      <workItem from="1658345685796" duration="10881000" />
+      <workItem from="1658429105022" duration="23000" />
+      <workItem from="1658525864508" duration="6153000" />
     </task>
+    <task id="LOCAL-00001" summary="Introducao ao HTML e JSP">
+      <created>1658365137262</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658365137262</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +301,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit Primeiro Projeto Web" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit Primeiro Projeto Web" />
+    <MESSAGE value="Introducao ao HTML e JSP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introducao ao HTML e JSP" />
   </component>
 </project>
