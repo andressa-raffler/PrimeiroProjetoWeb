@@ -13,7 +13,7 @@ import java.util.List;
  */
 
 
-public class ClienteDao {
+public class ClienteDAO {
     //Data Acess Object, objeto de acesso a dados
 
     private static List<Cliente> bancoClientes = new ArrayList<>();

@@ -14,16 +14,17 @@
 <body>
 
     <h1> Lista de Clientes Cadastrados </h1>
-<h3>Cliente de id: ${idClienteSalvo} cadastrado com sucesso!</h3><br/>
+    <h3>Cliente de id: ${idClienteSalvo} , cadastrado com sucesso!</h3><br/>
     <table border="solid">
         <tr>
+            <th>ID</th>
             <th>Nome</th>
             <th>CPF</th>
             <th>E-mail</th>
             <th>Idade</th>
             <th>Maior de Idade</th>
         </tr>
-        <c:forEach var="clientes" items="${clientes}" begin="<int>">
+        <c:forEach var="cliente" items="${clientes}" begin="<int>">
         <tr>
             <td>${id.count}</td>
             <td>${cliente.nome}</td>
